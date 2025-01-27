@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced GPA Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GPA Calculator</h1>
+
+      <!-- Semester Count Input -->
+      <div class="semester-control">
+        <input
+          type="number"
+          id="semesterCount"
+          placeholder="Number of Semesters"
+          min="1"
+        />
+        <button onclick="generateSemesters()">Generate Semesters</button>
+        <button onclick="addNewSemester()" class="add-btn">
+          + Add Semester
+        </button>
+      </div>
+
+      <!-- Semesters Container -->
+      <div id="semestersContainer"></div>
+
+      <!-- Results -->
+      <!-- Calculate Button -->
+      <button class="calculate-btn" onclick="calculateTotalGPA()">
+        Calculate GPA
+      </button>
+
+      <!-- Results -->
+      <div class="results">
+        <h2>Total Results</h2>
+        <div id="totalGPA">Total GPA: 0.00</div>
+        <div id="totalAKTS">Total AKTS: 0</div>
+      </div>
+    </div>
+    <script src="grades.js"></script>
+    <script src="gpaCalculator.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
