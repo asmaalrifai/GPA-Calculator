@@ -88,3 +88,28 @@ function toggleSemesterMode(semesterId) {
     }
 }
 
+// Dark Mode Toggle Functionality
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    document.querySelector(".container").classList.toggle("dark-mode-container");
+    document.querySelector(".results").classList.toggle("dark-mode-results");
+    document.querySelectorAll(".semester").forEach(el => el.classList.toggle("dark-mode-semester"));
+    document.querySelectorAll(".semester-results").forEach(el => el.classList.toggle("dark-mode-results"));
+    document.querySelectorAll("h1, h2").forEach(el => el.classList.toggle("dark-mode-text"));
+    
+    let darkModeButton = document.querySelector(".dark-mode-btn");
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeButton.innerText = "☀️ Light Mode";
+    } else {
+        darkModeButton.innerText = "🌙 Dark Mode";
+    }
+}
+
+// Add Dark Mode Button
+window.onload = function() {
+    let darkModeButton = document.createElement("button");
+    darkModeButton.innerText = "🌙 Dark Mode";
+    darkModeButton.classList.add("dark-mode-btn");
+    darkModeButton.onclick = toggleDarkMode;
+    document.body.appendChild(darkModeButton);
+};

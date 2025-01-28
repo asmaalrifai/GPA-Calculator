@@ -140,3 +140,102 @@ button:hover {
 .remove-btn:hover {
     background: #c0392b;
 }
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #171717 0%, #212121 100%);
+    color: white;
+}
+
+.container.dark-mode-container {
+    background: #212121;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.results.dark-mode-results {
+    background: #171717;
+    color: white;
+}
+
+.semester.dark-mode-semester {
+    background: #171717;
+    border: 1px solid #444;
+    color: white;
+}
+
+.semester-results.dark-mode-results {
+    background: #212121;
+    color: white;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background: #444;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background: #666;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #171717 0%, #212121 100%);
+    color: white;
+}
+
+.container.dark-mode-container {
+    background: #212121;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.results.dark-mode-results {
+    background: #171717;
+    color: white;
+}
+
+.semester.dark-mode-semester {
+    background: #171717;
+    border: 1px solid #444;
+    color: white;
+}
+
+.semester-results.dark-mode-results {
+    background: #212121;
+    color: white;
+}
+
+/* Dark Mode Heading Colors */
+h1.dark-mode-text,
+h2.dark-mode-text {
+    color: #ececec;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background: #444;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background: #666;
+}
